@@ -1,13 +1,22 @@
 #before install htslib, these libs should be installed first
+
 yum install bzip2-devel ncurses-libs ncurses-devel xz-devel zlib-devel
 
+
 #install htslib
+
 git clone https://github.com/zjsailor/htslib
+
 cd htslib
+
 autoheader
+
 autoconf
+
 ./configure
+
 make && make install
+
 
 [![Build Status](https://travis-ci.org/samtools/htslib.svg?branch=develop)](https://travis-ci.org/samtools/htslib)
 [![Build status](https://ci.appveyor.com/api/projects/status/v46hkwyfjp3l8nd3/branch/develop?svg=true)](https://ci.appveyor.com/project/samtools/htslib/branch/develop)

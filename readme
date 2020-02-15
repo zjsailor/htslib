@@ -1,0 +1,10 @@
+#before install htslib, these libs should be installed first
+yum install bzip2-devel ncurses-libs ncurses-devel xz-devel zlib-devel
+
+#install htslib
+git clone https://github.com/zjsailor/htslib
+cd htslib
+autoheader
+autoconf
+./configure
+make && make install
